@@ -16,6 +16,17 @@ html::-webkit-scrollbar{
 /* media query for mobile devices */
 @media only screen and (max-width: 1766px){
     #header img{
+        height: 25rem;
+    }
+    #new img{
+        height: 20rem;
+    }
+    #fragrances{
+        height: auto;
+    }
+}
+@media only screen and (max-width: 766px){
+    #header img{
         height: 20rem;
     }
     #new img{
