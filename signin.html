@@ -45,35 +45,132 @@
             </ul>
           </div>
         </div>
-      </nav>
+    </nav>
     <!-- Navbar end -->
 
-      <div class="container d-flex justify-content-center align-items-center vh-100">
-        <div class="container-fluid col-lg-12">
-            <form class="col-sm-8" action="" method="post" >
-                <div data-aos="fade-up">
-                  <div class="col-lg-5 mb-3">
-                    <input type="email" class="form-control shadow" id="email" name="email" placeholder="name@example.com">
-                  </div>
-                  <div class="col-lg-5 mb-3">
-                    <input type="password" class="form-control shadow" id="password" name="password" placeholder="password">
-                  </div>
-                  <div class="mb-3">
-                    <a href="">Forgot password?</a>
-                  </div>
-                  <button type="submit" class="btn btn-warning">Sign in <i class="fa-solid fa-right-to-bracket"></i></button>
-                </div>
-            </form>
-          </div>
+    <section id="skills" class="bg-light">
+      <div class="container mb-4">
+        <div class="text-center pt-5 animate__animated animate__fadeInDown">
+          <h2 class="display-4 text-warning pt-4 pb-4">Signing Up <i class="fa-solid fa-user-plus"></i></h2>
+        </div>
       </div>
 
-    <!-- footer -->
-    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-        <div class="container-fluid">
-          <div class="collapse navbar-collapse justify-content-center flex-grow-1 pe-3 pt-3" id="navbarSupportedContent">
-            <h6 class="text-light">Developed by <a href="https://bongx514.github.io/index/">Bongx514.dev</a>. All rights reserved</h6>
-          </div>
+      <div class="container d-flex justify-content-center pb-4">
+        <div class="col-lg-6 mb-4">
+          <form action="" class="row">
+            <div class="col-lg-12">
+              <h1 class="display-6"><i class="fa-solid fa-user"></i> Personal Details</h1>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="fname">First Name</span>
+                <input type="text" class="form-control" name="fname" placeholder="John" aria-label="fname" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="lname">Last Name</span>
+                <input type="text" class="form-control" name="lname" placeholder="Doe" aria-label="lname" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="idnumber">RSA ID</span>
+                <input type="text" class="form-control" name="idnumber" placeholder="RSA ID Number" aria-label="idnumber" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="DateOfBirth">RSA ID</span>
+                <input type="date" class="form-control" name="DateOfBirth" placeholder="Date of Birth" aria-label="DateOfBirth" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Gender</label>
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected>Choose Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-lg-12 pt-4">
+              <h1 class="display-6"><i class="fa-solid fa-phone"></i> Contact Details</h1>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="phone">Phone Number</span>
+                <input type="text" class="form-control" name="phone" placeholder="(+27) 123 4567" aria-label="phone" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="telnumber">Tel Number</span>
+                <input type="text" class="form-control" name="telnumber" placeholder="(012) 345 6789" aria-label="telnumber" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="email">Email</span>
+                <input type="email" class="form-control" name="email" placeholder="example@email.com" aria-label="email" aria-describedby="basic-addon1">
+              </div>
+            </div>
+
+            <div class="col-lg-12 pt-4">
+              <h1 class="display-6"><i class="fa-solid fa-location-dot"></i> Residence Details</h1>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="address">Address</span>
+                <input type="text" class="form-control" name="address" placeholder="123 street name" aria-label="address" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="lname">Surburb</span>
+                <input type="text" class="form-control" name="lname" placeholder="Surburb name" aria-label="lname" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="idnumber">City</span>
+                <input type="text" class="form-control" name="idnumber" placeholder="City" aria-label="idnumber" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Province</label>
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected>Choose province</option>
+                  <option value="">Gauteng</option>
+                  <option value="">Limpopo</option>
+                  <option value="">North West</option>
+                  <option value="">Northen Cape</option>
+                  <option value="">Eastern Cape</option>
+                  <option value="">Free State</option>
+                  <option value="">Western Cape</option>
+                  <option value="">KwaZulu-Natal</option>
+                  <option value="">Mpumalanga</option>
+                </select>
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="idnumber">Postal Code</span>
+                <input type="text" class="form-control" name="idnumber" placeholder="0123" aria-label="idnumber" aria-describedby="basic-addon1">
+              </div>
+            </div>
+
+            <div class="col-lg-12 pt-4">
+              <h1 class="display-6"><i class="fa-solid fa-credit-card"></i> Payment Details</h1>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="phone">Card Number</span>
+                <input type="text" class="form-control" name="phone" placeholder="0000 0000 0000 0000" aria-label="phone" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="telnumber">Card Holder</span>
+                <input type="text" class="form-control" name="telnumber" placeholder="Mr J Doe" aria-label="telnumber" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="email">Expiration Date</span>
+                <input type="email" class="form-control" name="email" placeholder="mm/yy" aria-label="email" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="telnumber">CIV</span>
+                <input type="text" class="form-control" name="telnumber" placeholder="123" aria-label="telnumber" aria-describedby="basic-addon1">
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-end">
+              <button type="button" class="btn btn-success mb-3">Proceed <i class="fa-solid fa-right-to-bracket"></i></button>
+            </div>
+          </form>
         </div>
+      </div>
+
+    </section>
+
+    <!-- footer -->
+    <nav class="navbar position-relative navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid d-flex align-items-center justify-content-center gap-2">
+        <h6 class="text-light">Developed by <a href="">Bongx514.dev</a>. All rights reserved</h6>
+      </div>
     </nav>
     <!-- footer end -->
 
