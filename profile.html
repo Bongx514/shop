@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Home page</title>
+</head>
+<body>
+    <!-- Navbar start -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Shop514.com</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end flex-grow-1 pe-3 pt-3" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home <i class="fa-solid fa-house"></i></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Shop <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#watches">Watches</a></li>
+                  <li><a class="dropdown-item" href="#new">New deals</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#fragrances">Fragrances</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Support <i class="fa-solid fa-circle-info"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cart.html">Cart <i class="fa-solid fa-cart-shopping"></i></a>
+              </li>
+              <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#signinForm">Sign in</button>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <section id="skills" class="bg-light">
+      <div class="container pb-4">
+        <div class="text-center pt-5 animate__animated animate__fadeInDown">
+          <h2 class="display-2 pt-4 pb-2">User Profile <i class="fa-solid fa-user"></i></h2>
+        </div>
+      </div>
+
+      <div class="d-flex flex-wrap justify-content-center p-4">
+        <div class="col-lg-3 pb-4">
+          <div class="d-flex justify-content-center">
+            <div class="card shadow" style="width: 22rem;">
+              <img src="icons/user-profile.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mr John Doe</h5>
+                <p class="card-text">(+27)84 123 4567</p>
+                <p class="card-text">example@email.com</p>
+                <a href="#" class="btn btn-primary">Edit Profile <i class="fa-solid fa-user-pen"></i></a>
+                <a href="#" class="btn btn-danger">Change Password <i class="fa-solid fa-lock"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4">
+          <form action="">
+            <div class="col-lg-12">
+              <h1 class="display-6"><i class="fa-solid fa-user"></i> Personal Details</h1>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="fname">First Name</span>
+                <input type="text" class="form-control" name="fname" placeholder="John" aria-label="fname" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="lname">Last Name</span>
+                <input type="text" class="form-control" name="lname" placeholder="Doe" aria-label="lname" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="idnumber">RSA ID</span>
+                <input type="text" class="form-control" name="idnumber" placeholder="RSA ID Number" aria-label="idnumber" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="DateOfBirth">Date of Birth</span>
+                <input type="date" class="form-control" name="DateOfBirth" placeholder="Date of Birth" aria-label="DateOfBirth" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Gender</label>
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected>Choose Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-lg-12 pt-4">
+              <h1 class="display-6"><i class="fa-solid fa-phone"></i> Contact Details</h1>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="phone">Phone Number</span>
+                <input type="text" class="form-control" name="phone" placeholder="(+27) 123 4567" aria-label="phone" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="telnumber">Tel Number</span>
+                <input type="text" class="form-control" name="telnumber" placeholder="(012) 345 6789" aria-label="telnumber" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="email">Email</span>
+                <input type="email" class="form-control" name="email" placeholder="example@email.com" aria-label="email" aria-describedby="basic-addon1">
+              </div>
+            </div>
+
+            <div class="col-lg-12 pt-4">
+              <h1 class="display-6"><i class="fa-solid fa-location-dot"></i> Residence Details</h1>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="address">Address</span>
+                <input type="text" class="form-control" name="address" placeholder="123 street name" aria-label="address" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="lname">Surburb</span>
+                <input type="text" class="form-control" name="lname" placeholder="Surburb name" aria-label="lname" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="idnumber">City</span>
+                <input type="text" class="form-control" name="idnumber" placeholder="City" aria-label="idnumber" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Province</label>
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected>Choose province</option>
+                  <option value="">Gauteng</option>
+                  <option value="">Limpopo</option>
+                  <option value="">North West</option>
+                  <option value="">Northen Cape</option>
+                  <option value="">Eastern Cape</option>
+                  <option value="">Free State</option>
+                  <option value="">Western Cape</option>
+                  <option value="">KwaZulu-Natal</option>
+                  <option value="">Mpumalanga</option>
+                </select>
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="idnumber">Postal Code</span>
+                <input type="text" class="form-control" name="idnumber" placeholder="0123" aria-label="idnumber" aria-describedby="basic-addon1">
+              </div>
+            </div>
+
+            <div class="col-lg-12 pt-4">
+              <h1 class="display-6"><i class="fa-solid fa-credit-card"></i> Payment Details</h1>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="phone">Card Number</span>
+                <input type="text" class="form-control" name="phone" placeholder="0000 0000 0000 0000" aria-label="phone" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="telnumber">Card Holder</span>
+                <input type="text" class="form-control" name="telnumber" placeholder="Mr J Doe" aria-label="telnumber" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="email">Expiration Date</span>
+                <input type="email" class="form-control" name="email" placeholder="mm/yy" aria-label="email" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="telnumber">CIV</span>
+                <input type="text" class="form-control" name="telnumber" placeholder="123" aria-label="telnumber" aria-describedby="basic-addon1">
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-end">
+              <button type="button" class="btn btn-success mb-3">Confirm <i class="fa-solid fa-right-to-bracket"></i></button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- footer -->
+    <nav class="navbar position-relative navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid d-flex align-items-center justify-content-center gap-2">
+        <h6 class="text-light">Developed by <a href="">Bongx514.dev</a>. All rights reserved</h6>
+      </div>
+    </nav>
+    <!-- footer end -->
+
+<script src="aos.js"></script>
+</body>
+
+<!-- Modal sign-in -->
+<div class="modal fade" id="signinForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-theme="dark">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title text- center text-warning" id="exampleModalLabel">Sign In <i class="fa-solid fa-right-to-bracket"></i></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body d-flex justify-content-center">
+        <form class="col-sm-8" action="" method="post" >
+          <div data-aos="fade-up">
+            <div class="mb-3">
+              <input type="email" class="form-control shadow" id="email" name="email" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <input type="password" class="form-control shadow" id="password" name="password" placeholder="password">
+            </div>
+            <div class="mb-3">
+              <a href="">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn btn-warning">Sign in <i class="fa-solid fa-right-to-bracket"></i></button>
+          </div>
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel <i class="fa-solid fa-xmark"></i></button>
+        <button type="button" class="btn btn-warning">Sign up <i class="fa-solid fa-user-plus"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+</html>
